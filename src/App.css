@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  color: #8d7958;
+  background:
+    radial-gradient(150% 150% at left  -40% top    -40%,#0000 98%,currentColor) left  top,
+    radial-gradient(150% 150% at right -40% top    -40%,#0000 98%,currentColor) right top,
+    radial-gradient(150% 150% at left  -40% bottom -40%,#0000 98%,currentColor) left  bottom,
+    radial-gradient(150% 150% at right -40% bottom -40%,#0000 98%,currentColor) right bottom;
+  background-size: 50.3% 50.3%;
+  background-repeat: no-repeat;
+  -webkit-mask: radial-gradient(circle 5px,#0000 90%,#000);
+  animation: l7 1.5s infinite linear;
+}
+@keyframes l7 { 
+  100%{transform: rotate(1turn)}
+}
